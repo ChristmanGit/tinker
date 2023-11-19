@@ -1870,7 +1870,7 @@ with gr.Blocks(theme=gr.themes.Base()) as app:
                             interactive=True,
                             )
                     with gr.Accordion("Fast-Mode (TESTING)", open=False):
-                        fast_audio = gr.Audio(label="As soon as you stop recording, inference will start.",type="filepath", source="microphone", autoplay=False)
+                        fast_audio = gr.Audio(label="As soon as you stop recording, inference will start.",type="filepath", sources=["microphone"], autoplay=False)
                         fast_result = gr.Audio(label="Result",type="filepath", autoplay=True)
                         
             with gr.Row():
